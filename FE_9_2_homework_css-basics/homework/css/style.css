@@ -97,7 +97,7 @@ p:not(.tm-banner-text)
 	vertical-align: super;
 }
 /*task 10*/
-.gallery-container .box:nth-child(even)
+.blocks .box:nth-child(even)
 {
 	background-color: gainsboro;
 }
