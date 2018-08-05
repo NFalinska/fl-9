@@ -1,5 +1,131 @@
-/* 
-
-write your code here
-
-*/
+/*task 1*/
+@media print
+{
+	.tm-sidebar, #home:before, section:before, #id, #about, .heading, #ideas, .blocks, #contact, .img-fluid
+	{
+		display: none;
+	}
+	.tm-banner
+	{
+		height: 260px;
+	}
+	.flex-2-col
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	.tm-main-content
+	{
+		margin: auto;
+		text-align: left;
+	}
+	.tm-team-description-container
+	{
+		margin-top: -80px;
+		max-width: 100%;
+	}
+	.tm-team-description-container h2
+	{
+		color: blue;
+	}
+}
+/*task 2*/
+.thumbnail
+{
+	border-radius: 200px;
+}
+.box-bg:hover
+{
+	background-color: skyblue;
+}
+.tm-box-bg-title:hover
+{
+	color: white;
+	font-weight: bold;
+}
+/*task 3*/
+p::first-letter
+{
+	color: #76cdd7;
+	font-size: 30px;
+}
+/*task 4*/
+.tm-main-nav, .tm-banner, .tm-content-box
+{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+/*task 5*/
+#home:before, section:before
+{
+	border-right: 160px solid transparent;
+	border-top: 30px solid skyblue;
+	content: '';
+	position: absolute;
+}
+/*task 6*/
+.carousel-inner .tm-section-title
+{
+	color: gainsboro;
+	letter-spacing: 5px;
+}
+/*task 7*/
+h2+p
+{
+	font-style: italic;
+}
+/*task 8*/
+p:not(.tm-banner-text)
+{
+	line-height: 2em;
+	text-indent: 1.5em;
+}
+/*task 9*/
+.pad a:visited
+{
+	color: silver;
+}
+.pad a:hover
+{
+	border-bottom: 1px solid skyblue;
+	color: skyblue;
+}
+.text:after
+{
+	color: red;
+	content: "new";
+	font-size: 10px;
+	vertical-align: super;
+}
+/*task 10*/
+.gallery-container .box:nth-child(even)
+{
+	background-color: gainsboro;
+}
+.gallery-container p::first-letter
+{
+	color: black;
+}
+.box p
+{
+	text-indent: 0;
+}
+/*task 11*/
+.tm-main-nav ul li:not(:last-child)
+{
+	border-bottom: 2px dotted silver;
+}
+/*task 12*/
+input[type], button[type]
+{
+	color: red;
+}
+.submit-btn:hover
+{
+	background-color: dodgerblue;
+	color: white;
+}
+.mandatory-field::after
+{
+	color: red;
+	content: "*";
+}
