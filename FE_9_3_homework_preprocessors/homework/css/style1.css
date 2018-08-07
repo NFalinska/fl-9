@@ -1,0 +1,71 @@
+* {
+  font-family: sans-serif; }
+
+.main-wrapper {
+  width: 980px;
+  margin: auto; }
+  .main-wrapper header {
+    display: flex;
+    justify-content: space-between; }
+    .main-wrapper header img {
+      width: 300px;
+      color: red; }
+    .main-wrapper header nav {
+      display: flex;
+      justify-content: space-around;
+      width: 670px;
+      align-self: flex-end;
+      padding: 20px;
+      border-top: 1px solid silver;
+      border-bottom: 1px solid silver; }
+      .main-wrapper header nav a {
+        text-transform: uppercase;
+        color: deepskyblue;
+        text-decoration: none; }
+  .main-wrapper .toolbar {
+    height: 40px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-end; }
+    .main-wrapper .toolbar input {
+      width: 200px;
+      padding-left: 20px;
+      border: 1px solid deepskyblue; }
+    .main-wrapper .toolbar ::-webkit-input-placeholder {
+      color: deepskyblue; }
+  .main-wrapper #list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .main-wrapper #list article {
+      margin: 10px 0;
+      width: 450px;
+      background-color: whitesmoke; }
+    .main-wrapper #list img {
+      padding-top: 10px;
+      padding-left: 10px;
+      width: 430px;
+      height: 250; }
+    .main-wrapper #list .post-description {
+      margin: 10px 20px;
+      color: darkseagreen; }
+    .main-wrapper #list h3 {
+      padding-top: 10px;
+      color: deepskyblue;
+      text-transform: uppercase;
+      margin: 0 20px;
+      border-top: 1px solid deepskyblue; }
+    .main-wrapper #list p {
+      margin: 20px;
+      color: dodgerblue;
+      padding: 10px; }
+  .main-wrapper #about p, .main-wrapper #contact p {
+    color: dodgerblue;
+    padding: 10px;
+    line-height: 2em; }
+  .main-wrapper #about h1, .main-wrapper #about h4, .main-wrapper #contact h1, .main-wrapper #contact h4 {
+    display: flex;
+    color: deepskyblue;
+    justify-content: flex-end; }
+  .main-wrapper #about img, .main-wrapper #contact img {
+    width: 100%; }
