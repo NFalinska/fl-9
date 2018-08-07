@@ -1,30 +1,38 @@
 * {
-	font-family: sans-serif;
+	font-family: $fontFamily;
 }
 
 .main-wrapper {
-	width: 980px;
+	width: 960px;
 	margin: auto;
+	background-color: $contentBackground;
+	padding: 10px;
+	
+	p {
+		color: grey;
+		padding: 10px;
+		line-height: 2em;
+	}
 header {
 	display: flex;
 	justify-content: space-between;
 	
 img {
-	width: 300px;
+	width: 280px;
 	color: red;
 }
 	nav {
 		display: flex;
 		justify-content: space-around;
-    width: 670px;
-	align-self: flex-end;
-	padding: 20px;
-	   border-top: 1px solid silver;
-		 border-bottom: 1px solid silver;
+        width: 650px;
+	    align-self: flex-end;
+	    padding: 20px;
+	    border-top: 1px solid silver;
+		border-bottom: 1px solid silver;
 		
 		a {
 			text-transform: uppercase;
-			color: deepskyblue;
+			color: $mainHeadingColor;
 			text-decoration: none;
 		}		
 }
@@ -40,10 +48,13 @@ img {
 		input {
 			width: 200px;
 			padding-left: 20px;
-			border:1px solid deepskyblue;
+			border:1px solid $mainHeadingColor;
+			
+			 &::placeholder { 
+			 color: $mainHeadingColor; 
+		}
 		}
 		
-		::-webkit-input-placeholder { color: deepskyblue; }
 	}
 
 #list {
@@ -53,49 +64,71 @@ img {
 	
 	article {
 		margin: 10px 0;
-		width: 450px;
-		background-color: whitesmoke;
+		width: 430px;
+		background-color: $bgArticleColor;
 	}
 	img {
 		padding-top: 10px;
 		padding-left: 10px;
-		width: 430px;
-		height: 250;
+		width: 410px;
+		height: 250px;
 	}
 	
 	.post-description {
 		margin: 10px 20px;
-		color: darkseagreen;
+		color: 	$postDescColor;
 	}
 	
 	h3 {
 		padding-top: 10px;
-		color: deepskyblue;
+		color: $headingColor;
 		text-transform: uppercase;
 		margin: 0 20px;
-		border-top: 1px solid deepskyblue;
+		border-top: 1px solid $headingColor;
 	}
 	
 	p {
 		margin: 20px;
-		color: dodgerblue;
-		padding: 10px;
+	
 	}
 }
 	
 	#about, #contact{
-		p{
-			color: dodgerblue;
-			padding: 10px;
-			line-height: 2em;
-		}
 		h1,h4 {
+			text-transform: uppercase;
 			display: flex;
-			color: deepskyblue;
+			color:$mainHeadingColor;
 			justify-content: flex-end;
 		}
 		img {
 			width: 100%;
 		}
-	}	
+		.info {
+			display: flex;
+		    flex-direction: column;
+			
+			input {
+				margin: 10px;
+			    height: 40px;
+				padding: 0 10px;
+			}
+			button {
+				text-transform: uppercase;
+				color: white;
+				background: $mainHeadingColor;
+				margin-right: 10px;
+				align-self: flex-end;
+				width: 250px;
+				height: 50px;
+				font-size: 18px;
+				font-weight: bold;
+			}
+		}
+	}
+	
+	footer {
+		color: grey;
+		font-size: 14px;
+		margin-top: 80px;
+	}
 }
