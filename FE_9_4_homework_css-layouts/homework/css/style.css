@@ -11,7 +11,7 @@
  header {
      background-image: url(/img/apples.jpg) ;
      background-size: 100% 100%;
-     height: 500px;
+     height: 600px;
 }
  nav {
      display: flex;
@@ -33,14 +33,22 @@
      margin-top: 180px;
 }
  header h1{
+	 text-transform: uppercase;
      color: #FFF;
-     font-size: 55px;
+     font-size: 48px;
+	 font-weight: 100;
+	  letter-spacing: 5px;
+}
+header h1 span {
+	font-size: 90px;
 }
  header h4{
+	 margin-top: -30px;
      color: #FFF;
      font-size: 12px;
 }
  header button {
+	 margin-top: 100px;
      color: #FFF;
      border: 2px solid #FFF;
      width: 200px;
@@ -60,22 +68,55 @@
      font-size: 12px;
      margin-left: 100px;
 }
+ .articles {
+     padding: 40px;
+     background-color: #F3F3F3;
+}
+.articles h2 {
+	margin-top: 100px;
+	margin-bottom: 60px;
+	text-align: center;
+	font-weight: 100;
+}
+.articles h2 span {
+	font-weight: bold;
+}
  article {
      display: flex;
      justify-content: space-between;
      margin: 10px;
 }
- article:nth-child(even){
-     flex-direction:row-reverse;
-}
+
  article img {
      width: 560px;
      float: left;
+	 position: relative;
 }
- .articles {
-     padding: 40px;
-     background-color: #F3F3F3;
+.date {
+	position: absolute;
+	color: #FFF;
+	z-index: 1;
+	margin-left: 20px;
+	margin-top: 270px;
+	font-size: 14px;
 }
+.date span {
+	font-weight: bold;
+}
+.like {
+	position: absolute;
+	margin-top: 20px;
+	z-index: 1;
+	border: 2px solid #FFF;
+	margin-left: 470px;
+	color: #FFF;
+	width: 50px;
+	padding: 5px;
+	font-weight: bold;
+	background-color:rgba(48, 48, 48, .5);
+	text-align: center;
+}
+
  .topic {
      width: 400px;
      color: #343638;
@@ -90,15 +131,28 @@
      background-color: #FFF;
      margin-top: 40px;
 }
- .toolbar input {
-     height: 40px;
+input::placeholder {
+	color:#343638;
+}
+.toolbar input {
+	height: 40px;
+	width: 600px;
+}
+.toolbar-small input {
+	height: 30px;
+	width: 200px;
+	margin-left: -140px;
+}
+ .toolbar input, .toolbar-small input {
      border-color: #343638;
-     width: 600px;
      padding-left: 10px;
      background-color: #F3F3F3;
 }
+.toolbar .button-subscribe{
+	 width: 100px;
+}
  .button-subscribe {
-     width: 100px;
+	 padding: 10px;
      background-color: #343638;
      border:none;
      color: #FFF;
@@ -120,11 +174,14 @@
      border-bottom: 1px solid #E8E8E8;
      padding-bottom: 80px;
 }
+.contact div {
+	width: 300px;
+}
  .contact p{
      color: #9E9E9E;
      font-size: 12px;
 }
- .contact div {
+ .contact div:not(:last-child) {
      margin-right: 10px;
 }
  .contact div:last-child{
@@ -132,6 +189,12 @@
 }
  .contact h3 {
      color: #343638;
+}
+.contact .tweet {
+	font-style: italic;
+}
+.contact .time {
+	color: #B7C8D9;
 }
  footer {
      padding: 20px;
@@ -142,4 +205,7 @@
      color: #343638;
      padding: 10px;
      text-decoration: none;
+}
+.footer-info {
+	color: #9E9E9E;
 }
