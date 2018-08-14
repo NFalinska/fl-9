@@ -1,25 +1,67 @@
+body {
+	max-width: 1080px;
+	margin: auto;
+	background-color: #0a1223;
+	color:  #fff;
+	font-family: sans-serif;
+}
+@media (max-width: 555px) {
+    body {
+        background-color: lightblue;
+    }
+	nav {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.menu li{
+		color: gold;
+		border-color: red;
+	}
+}
+nav ul {
+	list-style-type: none;
+}
+nav{
+	display: flex;
+	justify-content: flex-end;	
+}
 /*
- * Feel free to change name of colors if you need it
- * Feel free to add new colors if you need it
- */
-:root {
-  --bg-color--dark: #0a1223;
-  --bg-color--light: #fff;
-  --link: #5d5d5d;
-  --link--active: #54597d;
-  --link--hover: #54597d;
-  --article-title: #ddd;
-  --article-title--dark: #000;
-  --thumbnail--description: #5d5d5d;
-
-  /* These styles are needed only for media query max-width: 575px */
-
-  /* The 'Up' button (circle button at right bottom corner) */
-  --btn-color: #fff;
-  --btn-bg-color: #5ebcff;
-
-  --navigation-border-bottom: #ddd;
-  --thumbnail-title: #484747;
+nav li {
+	float: left;
+}
+*/
+nav a {
+	text-decoration: none;
+	color:  #fff;
+	margin: 10px;
+}
+nav a:active {
+	color: #5ebcff;
+}
+nav a:hover {
+	color: #7B68EE;
+}
+h1 {
+	text-align: center;
 }
 
-/* Your styles go here */
+h1 span {
+	font-style: italic;
+}
+img {
+	width: 300px;
+	height: 150px;
+}
+article {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.info {
+	width: 400px;
+}
+
+article:nth-child(even) {
+	flex-direction: row-reverse;
+}
