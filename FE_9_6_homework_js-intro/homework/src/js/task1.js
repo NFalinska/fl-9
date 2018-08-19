@@ -7,9 +7,9 @@ let result;
 
 if (price > 0 && discount < 100 && discount > 0) {
 	result = 'Price without discount:' + Math.round(price *100)/100 + 
-		'Discount:' + discount.toFixed(2) +'%' +
-		'Price with discount:' + new_price.toFixed(2) +
-		'Saved:' + saved.toFixed(2) 
+		'Discount:' + Math.round(discount * 100)/100 +'%' +
+		'Price with discount:' + Math.round(new_price * 100)/100 +
+		'Saved:' + Math.round(saved * 100)/100;
     } else {
 		alert('invalid data')
 	}
