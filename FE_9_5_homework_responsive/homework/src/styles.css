@@ -5,32 +5,38 @@ body {
 	color:  #fff;
 	font-family: sans-serif;
 }
-@media (max-width: 555px) {
+@media (max-width: 575px) {
     body {
-        background-color: lightblue;
+        background-color: #fff;
+		color: linear-gradient(to top, #fefcea, #f1da36);
     }
-	nav {
-		display: flex;
-		flex-direction: column-reverse;
+	.menu {
+		display:flex;
+		flex-direction: column;
 	}
-	.menu li{
-		color: gold;
-		border-color: red;
+	li {
+			border-bottom: 1px solid silver;
+		margin-left: -40px;
+	
+	}
+	.item-menu a {
+		color: #5d5d5d;
 	}
 }
 nav ul {
 	list-style-type: none;
 }
-nav{
+.menu {
 	display: flex;
 	justify-content: flex-end;	
 }
-/*
+.gra {
+	background: aqua;
+}
 nav li {
 	float: left;
 }
-*/
-nav a {
+.item-menu a {
 	text-decoration: none;
 	color:  #fff;
 	margin: 10px;
