@@ -1,6 +1,6 @@
 function registration(){
 	let login = prompt('Please write your login');
-    if (login==='') {
+    if (login===''||login===null) {
     alert('Canceled')
 	return false;
     } else if (login.length<4) {
@@ -12,13 +12,12 @@ function registration(){
 	}
 
 	let password = prompt('Please write your password');
-	let now = new Date().getHours();
 	switch(password){
-		case '':
+		case '' || null:
 		alert('Canceled');
 		break;
 		case 'SuperUser':
-			if(now > 20) {
+			if(new Date().getHours() > 20) {
 				alert('Good evening!');
 			} else {
 				alert('Good day!');
