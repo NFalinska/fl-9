@@ -1,12 +1,10 @@
 function guessNumber() {
     let question = confirm('Do you want to play a game?');
     let prize = 0;
-    const random_number = 2;
-    const random_number2 = 1;
-    const random = 1;
+    const random_number = 6;
+    const random_number2 = 11;
     if (question === true) {
-        let number = Math.floor(Math.random() * random_number + random);
-        console.log(number);
+        let number = Math.floor(Math.random() * random_number);
         let userNumber = +prompt(
             'Enter a number from 0 to 5 \nAttemps left: 0 \nTotal prize: 0 \nPossible prize on current attempt: 10$');
         if (userNumber === number) {
@@ -14,7 +12,7 @@ function guessNumber() {
             prize += num;
         } else {
             let secondAttempt = +prompt(
-                'Enter a number from 0 to 5 \nAttemps left: 1 \nTotal prize: 0 \nPossible prize on current attempt: 5$'
+                'Enter a number from 0 to 5 \nAttemps left: 1 \nTotal prize: 0 \nPossible prize on current attempt: 5$' 
             );
             if (secondAttempt === number) {
                 const num1 = 5;
@@ -40,7 +38,7 @@ function guessNumber() {
         }
         let new_game = confirm('Congratulation! Your prize is: ' + prize + '$ Do you want to continue?');
         if (new_game === true) {
-            let new_number = Math.floor(Math.random() * random_number2 + random);
+            let new_number = Math.floor(Math.random() * random_number2);
             let new_userNumber = +prompt(
 				'Enter a number from 0 to 10 \nAttemps left: 0 \nTotal prize: ' 
 				+ prize + 
@@ -77,14 +75,17 @@ function guessNumber() {
                     }
                 }
             }
-        }
-        let one_more = confirm('Congratulation! Your prize is: ' + prize + '$ Do you want to play again?');
+		let one_more = confirm('Congratulation! Your prize is: ' + prize + '$ Do you want to play again?');
         if (one_more === true) {
             guessNumber();
         } else {
             alert('Thanks for game! Have a nice day!')
 			return false;
         }
+        }else{
+			alert('Ok, your prize is: '+ prize + '$. Bye!')
+		}
+  
     } else {
         alert('You did not become a millionaire, but can.')
     }
