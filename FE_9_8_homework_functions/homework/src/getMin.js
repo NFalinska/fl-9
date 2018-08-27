@@ -9,4 +9,3 @@ function getMin() {
     }
     return min;
 }
-getMin();

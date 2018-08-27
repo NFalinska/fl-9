@@ -4,4 +4,3 @@ function reverseNumber(num) {
 
        return reversedNumber*Math.sign(num);
    }
-reverseNumber();

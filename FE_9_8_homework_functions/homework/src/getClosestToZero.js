@@ -7,4 +7,3 @@ function getClosestToZero() {
     }
     return closest;
 }
-getClosestToZero();
