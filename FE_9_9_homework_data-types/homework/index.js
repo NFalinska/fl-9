@@ -26,3 +26,15 @@ function filter(arr, fn) {
     });
     return newArray;
 }
+
+function keys(obj){
+	return Object.keys(obj);
+}
+
+function values(obj) {
+	return Object.values(obj);
+}
+
+function showFormattedDate(date) {
+	return `It is ${date.getDate()} of ${date.toLocaleString('en-US',{month: 'short'})}, ${date.getFullYear()} `
+}
