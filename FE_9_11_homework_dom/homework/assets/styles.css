@@ -1,3 +1,48 @@
+* {
+	font-family: sans-serif;
+}
+.container {
+	width: 940px;
+	margin: auto;
+	padding: 40px;
+}
 #title {
-	text-align: center
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+#in {
+	width: 880px;
+	height: 25px;
+	padding-left: 10px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	border: 1px solid black;
+}
+
+#item {
+	display: flex;
+}
+.delete{
+	margin-left: auto;
+	cursor: pointer;
+}
+
+#add {
+	cursor: pointer;
+}
+
+.new_item {
+	display: flex;
+	justify-content: space-between;
+}
+
+#info {
+	margin-bottom: 10px;
+}
+
+.text {
+	margin-left: 10px;
+	font-size: 16px;
+	margin-top: 4px;
 }
