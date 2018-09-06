@@ -34,7 +34,6 @@ window.onload = function() {
                 document.getElementById('out').innerHTML = out;
                 document.getElementById('delete').onclick = function() {
                     document.getElementById('item').innerHTML = '';
-                    console.log('я же работаю, дєло не ва мне')
                 }
 
             }
